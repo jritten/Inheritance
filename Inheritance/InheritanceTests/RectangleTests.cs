@@ -7,7 +7,7 @@ namespace InheritanceTests
     public class RectangleTests
     {
         [TestMethod]
-        public void TestNameSetProperly()
+        public void TestProperties()
         {
             // arrange
             var topLeft = new Inheritance.Point(1, 2);
@@ -18,6 +18,9 @@ namespace InheritanceTests
             var rectangle = new Inheritance.Rectangle(topLeft, height, width);
             // assert
             Assert.AreEqual(rectangle.Name, expectedName);
+            Assert.AreEqual(rectangle.TopLeft, topLeft);
+            Assert.AreEqual(rectangle.Height, height);
+            Assert.AreEqual(rectangle.Width, width);
         }
         [TestMethod]
         public void TestAreaSetProperly()
