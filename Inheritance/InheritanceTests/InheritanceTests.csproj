@@ -53,6 +53,7 @@
     <Compile Include="ShapeTests.cs" />
     <Compile Include="CircleTests.cs" />
     <Compile Include="RectangleTests.cs" />
+    <Compile Include="SquareTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
