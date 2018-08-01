@@ -11,7 +11,7 @@ namespace Inheritance
         public Point TopLeft { get; protected set; }
         public double Width { get; protected set; }
         public double Height { get; protected set; }
-        public double Area
+        public override double Area
         {
             get
             {

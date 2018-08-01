@@ -7,8 +7,15 @@ namespace InheritanceTests
     public class ShapeTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestToStringMethod()
         {
+            // arrange
+            var expectedName = "Shape";
+            // act 
+            var shape = new Inheritance.Shape();
+            var stringReturn = shape.ToString();
+            // assert
+            Assert.AreEqual(stringReturn, expectedName);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Inheritance
     {
         public Point Center { get; protected set; }
         public double Radius { get; protected set; }
-        public double Area
+        public override double Area
         {
             get
             {
