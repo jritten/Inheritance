@@ -8,9 +8,9 @@ namespace Inheritance
 {
     public class Square : Rectangle
     {
-        public Square (Point topLeft, double length)
+        public Square (Point topLeft, double length) : base(topLeft, length, length)
         {
-
+            Name = "Square";
         }
     }
 }
