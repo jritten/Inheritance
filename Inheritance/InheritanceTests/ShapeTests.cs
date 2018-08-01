@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace InheritanceTests
 {
     [TestClass]
-    public class InheritanceTests
+    public class ShapeTests
     {
         [TestMethod]
         public void TestMethod1()
