@@ -7,7 +7,7 @@ namespace InheritanceTests
     public class CircleTests
     {
         [TestMethod]
-        public void TestSetNameProperty()
+        public void TestProperties()
         {
             // arrange
             var expectedCenter = new Inheritance.Point(1, 2);
@@ -17,6 +17,8 @@ namespace InheritanceTests
             var circle = new Inheritance.Circle(expectedCenter, expectedRadius);
             // assert
             Assert.AreEqual(circle.Name, expectedName);
+            Assert.AreEqual(circle.Center, expectedCenter);
+            Assert.AreEqual(circle.Radius, expectedRadius);
         }
         [TestMethod]
         public void TestAreaProperty()
