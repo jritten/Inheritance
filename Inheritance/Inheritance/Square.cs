@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Square
+    public class Square : Rectangle
     {
+        public Square (Point topLeft, double length)
+        {
+
+        }
     }
 }
