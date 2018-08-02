@@ -23,7 +23,7 @@ namespace Inheritance
             {
                 return false;
             }
-            if (this.Name == input.Name)
+            if (this.X == input.X && this.Y == input.Y)
             {
                 return true;
             }
