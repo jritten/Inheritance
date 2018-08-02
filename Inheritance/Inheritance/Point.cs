@@ -16,5 +16,18 @@ namespace Inheritance
             X = x;
             Y = y;
         }
+        public override bool Equals(object obj)
+        {
+            var input = obj as Point;
+            if (input == null)
+            {
+                return false;
+            }
+            if (this.Name == input.Name)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

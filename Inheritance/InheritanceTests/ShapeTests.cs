@@ -9,13 +9,11 @@ namespace InheritanceTests
         [TestMethod]
         public void TestToStringMethod()
         {
-            // arrange
-            var expectedName = "Shape";
             // act 
             var shape = new Inheritance.Shape();
             var stringReturn = shape.ToString();
             // assert
-            Assert.AreEqual(stringReturn, expectedName);
+            Assert.AreEqual(stringReturn, null);
         }
     }
 }

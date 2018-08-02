@@ -13,7 +13,7 @@ namespace Inheritance
         {
             get
             {
-                throw new InvalidOperationException("get");
+                throw new InvalidOperationException();
             }
         }
         public override string ToString()
