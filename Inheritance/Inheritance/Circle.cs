@@ -24,5 +24,18 @@ namespace Inheritance
             Radius = radius;
             Name = "Circle";
         }
+        public override bool Equals(object obj)
+        {
+            var input = obj as Circle;
+            if (input == null)
+            {
+                return false;
+            }
+            if (this.Center == input.Center && this.Radius == input.Radius)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -32,5 +32,12 @@ namespace InheritanceTests
             // assert
             Assert.AreEqual(circle.Area, expectedArea);
         }
+        [TestMethod]
+        public void TestEquals()
+        {
+            // arrange 
+            // act
+            // assert 
+        }
     }
 }
