@@ -31,5 +31,22 @@ namespace InheritanceTests
             // assert
             Assert.AreEqual(square.Area, expectedArea);
         }
+        [TestMethod]
+        public void TestEquals()
+        {
+            // arrange
+            var pointObj = new Inheritance.Point(1, 1);
+            var length1 = 1;
+            var length2 = 2;
+            var square1 = new Inheritance.Square(pointObj, length1);
+            var squareEqual = new Inheritance.Square(pointObj, length1);
+            var squareNotEqual = new Inheritance.Square(pointObj, length2);
+            // act
+            var equalityCheckPass = square1.Equals(squareEqual);
+            var equalityCheckFail = square1.Equals(squareNotEqual);
+            // assert
+            Assert.IsTrue(equalityCheckPass);
+            Assert.IsFalse(equalityCheckFail);
+        }
     }
 }
