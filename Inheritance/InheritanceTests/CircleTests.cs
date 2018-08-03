@@ -35,9 +35,19 @@ namespace InheritanceTests
         [TestMethod]
         public void TestEquals()
         {
-            // arrange 
+            // arrange
+            var pointObj = new Inheritance.Point(1, 1);
+            var radiusNum1 = 1;
+            var radiusNum2 = 0;
+            var circle1 = new Inheritance.Circle(pointObj, radiusNum1);
+            var circle1Equal = new Inheritance.Circle(pointObj, radiusNum1);
+            var circleUnequal = new Inheritance.Circle(pointObj, radiusNum2);
             // act
-            // assert 
+            var equalityCheckPass = circle1.Equals(circle1Equal);
+            var equalityCheckFail = circle1.Equals(circleUnequal);
+            // assert
+            Assert.IsTrue(equalityCheckPass);
+            Assert.IsFalse(equalityCheckFail);
         }
     }
 }

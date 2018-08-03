@@ -26,5 +26,18 @@ namespace Inheritance
             this.Height = Height;
             this.Name = "Rectangle";
         }
+        public override bool Equals(object obj)
+        {
+            var input = obj as Rectangle;
+            if (input == null)
+            {
+                return false;
+            }
+            if (this.TopLeft == input.TopLeft && this.Width == input.Width && this.Height == input.Height)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
