@@ -21,20 +21,14 @@ namespace Inheritance
         public Circle (Point p, double radius) : this(radius)
         {
             Center = p;
-            Radius = radius;
-            Name = "Circle";
         }
         public Circle (Point p, int radius) : this(radius)
         {
             Center = p;
-            Radius = radius;
-            Name = "Circle";
         }
         public Circle (Point p, float radius) : this(radius)
         {
             Center = p;
-            Radius = radius;
-            Name = "Circle";
         }
         public Circle (double radius)
         {

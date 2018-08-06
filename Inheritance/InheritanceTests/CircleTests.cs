@@ -49,5 +49,13 @@ namespace InheritanceTests
             Assert.IsTrue(equalityCheckPass);
             Assert.IsFalse(equalityCheckFail);
         }
+        [TestMethod]
+        public void TestConstructorInt()
+        {
+            // arrange
+            // act
+            // assert 
+
+        }
     }
 }
